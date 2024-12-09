@@ -12,7 +12,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Profile = ({ teacherId, subjectName }) => {
   const teacherId1 = "T12345";
-  const teacherName = "John Doe";
+  const teacherName = "John Doe1";
   const subjectName1 = "Mathematics";
   return (
     <div style={{ display: "flex", height: "150vh" }}>
