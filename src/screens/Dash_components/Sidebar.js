@@ -77,7 +77,7 @@ const Sidebar = () => {
             <Link className="collapse-item" to="/studentsearch">
               Search
             </Link>
-            <Link className="collapse-item" to="/">
+            <Link className="collapse-item" to="/StudentAdmission">
               Student Admission
             </Link>
             <Link className="collapse-item" to="/ResultsSearch">
@@ -128,10 +128,10 @@ const Sidebar = () => {
         >
           <div className="bg-white py-2 collapse-inner rounded">
             <h6 className="collapse-header">Time Table:</h6>
-            <Link className="collapse-item" to="/page1">
+            <Link className="collapse-item" to="/createTimeTable">
               Create +
             </Link>
-            <Link className="collapse-item" to="/page2">
+            <Link className="collapse-item" to="/TimeTableEdit">
               Edit
             </Link>
           </div>
@@ -224,10 +224,10 @@ const Sidebar = () => {
         >
           <div className="bg-white py-2 collapse-inner rounded">
             <h6 className="collapse-header">Subjects:</h6>
-            <Link className="collapse-item" to="/page1">
+            <Link className="collapse-item" to="/subject+">
               Create +
             </Link>
-            <Link className="collapse-item" to="/page2">
+            <Link className="collapse-item" to="/subjects">
               List Search
             </Link>
           </div>

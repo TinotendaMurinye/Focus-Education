@@ -1,21 +1,22 @@
 import React from "react";
 import Sidebar from "../Dash_components/Sidebar";
 import Topbar from "../Dash_components/TopBar";
-import ClassProfile from "./Class_T";
-import Financials_T from "./Financials_T";
-import Results_T from "./Results_T";
-import Subject_T from "./Subject_T";
+import StudentClassProfile from "./StudentClass";
+import StudentFinancials from "./Studentfinancial";
+import StudentResults from "./studentResults";
+// import Subject_T from "./Subject_T";
 import "../../assets/css/sb-admin-2.min.css";
 import "../../assets/css/sb-admin-2.css";
 import profileImage from "../../assets/img/pexels-pavel-danilyuk-8001237.jpg";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import StudentAttendance from "./StudentAttendance";
 
 const Profile = ({ teacherId, subjectName }) => {
   const teacherId1 = "T12345";
   const teacherName = "John Doe1";
   const subjectName1 = "Mathematics";
   return (
-    <div style={{ display: "flex", height: "150vh" }}>
+    <div style={{ display: "flex", height: "300vh" }}>
       <Sidebar />
       <div style={{ flex: 1, display: "flex", flexDirection: "column" }}>
         <Topbar />
@@ -44,22 +45,23 @@ const Profile = ({ teacherId, subjectName }) => {
           <div className="row">
             {/* Class Profile Card */}
             <div className="col-lg-6 mb-4">
-              <ClassProfile teacherId={1} />
+              <StudentClassProfile teacherId={1} />
             </div>
 
             {/* Teacher Financials Card */}
             <div className="col-lg-6 mb-4">
-              <Financials_T teacherId={1} />
+              <StudentFinancials teacherId={1} />
             </div>
 
             {/* Teacher Pass Rates Card */}
             <div className="col-lg-6 mb-4">
-              <Results_T teacherId={1} />
+              <StudentResults studentId={1} />
             </div>
 
             {/* Subject Information Card */}
             <div className="col-lg-6 mb-4">
-              <Subject_T subjectName={'Mathematics'} />
+              <StudentAttendance  subjectName={'Mathematics'} />
+              
             </div>
           </div>
         </div>

@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Sidebar from "./Dash_components/Sidebar";
 import Topbar from "./Dash_components/TopBar";
-import StudentCard from "./Student_components/StudentCard"; // Import TeacherCard
+import SubjectCard from "./Dash_components/SubjectCard"; // Import TeacherCard
 import "../assets/css/sb-admin-2.min.css";
 import "../assets/css/sb-admin-2.css";
 
-const StudentSearch = () => {
+const SubjectSearch = () => {
   const teachers = [
     {
       teacher_id: "1",
@@ -91,7 +91,7 @@ const StudentSearch = () => {
           <div style={{ marginTop: "30px" }} className="mb-5">
             {filteredTeachers.map((teacher) => (
               <div key={teacher.teacher_id} onClick={() => handleTeacherClick(teacher)}>
-                <StudentCard
+                <SubjectCard
                   teacher={{
                     picture: "https://picsum.photos/800/400?random=2",
                     firstName: teacher.name,
@@ -112,4 +112,4 @@ const StudentSearch = () => {
   );
 };
 
-export default StudentSearch;
+export default SubjectSearch;
